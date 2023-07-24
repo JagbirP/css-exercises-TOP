@@ -4,6 +4,7 @@ html, body {
   height: 100%;
 }
 
+
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
@@ -13,13 +14,44 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  
+}
+
+.header {
+  margin: 10px;
+  font-weight: bold;
+  margin: 15px 10px 10px 0px;
 }
 
 .modal {
   background: white;
-  width: 480px;
+  width: 500px;
+  height: 200px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+
+
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+.extra{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.one {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  
+  
+}
+
+.two {
+  display: flex;
 }
 
 .icon {
@@ -33,6 +65,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  flex: 1 0 auto;
+  align-self: flex-start;
+  margin: 15px;
 }
 
 .close-button {
@@ -44,26 +80,34 @@ body {
   height: 24px;
   width: 24px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   border: 1px solid #eee;
   padding: 0;
+  align-self: flex-start;
+  
+  margin: 15px 15px 10px 10px;
 }
 
 button {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
+  margin: 10px;
 }
 
 button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
+  margin: 10px;
+  margin-left: 0;
 }
 
 button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+  margin: 10px;
+  margin-left: 0;
 }
